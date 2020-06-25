@@ -1,0 +1,28 @@
+@mixin flex($justify-content, $text-align) {
+	display: flex;
+	justify-content:$justify-content;
+	text-align:$text-align;
+}
+
+
+@mixin flex-with-direction($align, $direction) {
+	display: flex;
+	justify-content:$align;
+	text-align:$align;
+	flex-direction:$direction;
+}
+
+@mixin background($color){
+	background-color:$color;
+	color: set-text-color($color);
+}
+
+@mixin width-height-size($percent, $vh){
+	width: $percent;
+	height: $vh;
+}
+
+@mixin hover(){
+	color: $secondary-color;
+ 	transition: color 0.2s ease-out;
+}

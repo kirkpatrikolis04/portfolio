@@ -1,0 +1,77 @@
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.active {
+	background-color: $secondary-color;
+}
+
+
+.secondary-color {
+	color: $secondary-color;
+}
+
+
+
+$spaceamounts: (10, 15, 20, 25, 30);
+
+@each $space in $spaceamounts {
+	.mt-#{$space} {
+		margin: #{$space}px 0 0 0;
+	}
+
+	.mr-#{$space} {
+		margin: 0 #{$space}px 0 0;
+	}
+
+	.mb-#{$space} {
+		margin: 0 0 #{$space}px 0;
+	}
+
+	.ml-#{$space} {
+		margin: 0 0 0 #{$space}px;
+	}
+
+	.my-#{$space} {
+		margin: #{$space}px 0;
+	}
+
+	.mx-#{$space} {
+		margin: 0 #{$space}px;
+	}
+
+	.m-#{$space} {
+		margin: #{$space}px;
+	}
+
+	.pt-#{$space} {
+		padding: #{$space}px 0 0 0;
+	}
+
+	.pr-#{$space} {
+		padding: 0 #{$space}px 0 0;
+	}
+
+	.pb-#{$space} {
+		padding: 0 0 #{$space}px 0;
+	}
+
+	.pl-#{$space} {
+		padding: 0 0 0 #{$space}px;
+	}
+
+	.py-#{$space} {
+		padding: #{$space}px 0;
+	}
+
+	.px-#{$space} {
+		padding: 0 #{$space}px;
+	}
+
+	.p-#{$space} {
+		padding: #{$space}px;
+	}
+
+}

@@ -1,0 +1,20 @@
+%btn {
+	border: none;
+	padding: 10px 20px;
+	font-weight: bold;
+
+	&:hover {
+		cursor: pointer;
+		transition:0.5s;
+	}
+}
+
+.primary-btn {
+	@extend %btn;
+	@include background(lighten($primary-color, 20%));
+}
+
+.secondary-btn {
+	@extend %btn;
+	@include background(darken($secondary-color, 20%));
+}
